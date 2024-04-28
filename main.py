@@ -50,3 +50,13 @@ print(tuple_of_dicts)
 empty_tuple = ()
 print(empty_tuple)
 # Dictionaries or Maps
+# Python dictionaries, also known as maps or associative arrays in other languages, 
+# are unordered collections of key-value pairs.
+string_to_int_dict = {"one": 1, "two": 2, "three": 3, "four": 4}
+int_to_string_dict = {1: "one", 2: "two", 3: "three", 4: "four"}
+mixed_dict = {"name": "Alice", "age": 30, "is_student": False, "grades": [85, 92, 78]}
+tuple_key_dict = {(1, 2): "value1", (3, 4): "value2", (5, 6): "value3"}
+nested_dict = {"person1": {"name": "Alice", "age": 30}, "person2": {"name": "Bob", "age": 25}}
+mixed_keys_dict = {1: "one", "two": 2, (3, 4): "three-four"}
+dict_with_lists = {"numbers": [1, 2, 3], "letters": ['a', 'b', 'c']}
+empty_dict = {}
