@@ -15,6 +15,8 @@ for multiline comment'''
 # string
 greet = "Hi, my name is Mrinmoy"
 print(greet)
+#To put a " inside string
+print("double quote\"")
 # number
 year = 2024
 temperature = 41.7 
@@ -60,3 +62,14 @@ nested_dict = {"person1": {"name": "Alice", "age": 30}, "person2": {"name": "Bob
 mixed_keys_dict = {1: "one", "two": 2, (3, 4): "three-four"}
 dict_with_lists = {"numbers": [1, 2, 3], "letters": ['a', 'b', 'c']}
 empty_dict = {}
+print(mixed_keys_dict)
+
+#Arithmetic operations
+print("5 + 3 =", 5+3)
+print("5 - 3 =", 5-3)
+print("5 * 3 =", 5*3)
+print("5 / 3 =", 5/3)
+print("5 % 3 =", 5%3) #modulo => returns the remainder of division 
+print("5 ** 3 =", 5**3) #4 to the power 3 => 4^3
+print("5 // 3 =", 5//3) #floor division => returns the quotient of division, rounded to the nearest integer
+
