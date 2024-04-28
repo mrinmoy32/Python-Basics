@@ -7,3 +7,6 @@ This is a multi-line comment.
 It can span multiple lines.
 These lines are not executed as code.
 """
+
+'''This also works
+for multiline comment'''
