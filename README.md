@@ -20,7 +20,7 @@ This repository contains basic Python scripts and examples for beginners. Whethe
 To get started with the examples, clone this repository to your local machine:
 
 ```
-git clone https://github.com/your_username/python-basics.git
+git clone https://github.com/mrinmoy32/python-basics.git
 ```
 
 Then, navigate to the directory:
