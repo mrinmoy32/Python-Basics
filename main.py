@@ -17,6 +17,11 @@ greet = "Hi, my name is Mrinmoy"
 print(greet)
 #To put a " inside string
 print("double quote\"")
+#multi line string
+multiLineStr = '''This is a multiine
+string and
+this will keep going'''
+print(multiLineStr)
 # number
 year = 2024
 temperature = 41.7 
