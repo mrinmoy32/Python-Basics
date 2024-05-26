@@ -16,7 +16,7 @@ print("variables-----------")
 # string
 greet = "Hi, my name is Mrinmoy"
 print(greet)
-print(5 * "Hi Mrinmoy ")
+print(5 * "Hi Mrinmoy ") # prints 5 times
 num1 = "32"
 num2 = "18"
 print(2 * int(num1), num1)
@@ -152,3 +152,17 @@ print("Are you a human: " + str(human))
 print(33)
 print(float(33)) #33.0
 print(33/11) #Ans: 3.0   division always returns float
+
+#String Methods
+name = "virat kohli"
+word = "ABcDefG"
+numberStr = "1234"
+print(len(name)) # length of the sting
+print(name.find("h")) # index of h 
+print(name.capitalize()) # makes the 1st letter capital
+print(name.upper())
+print(word.lower())
+print(numberStr.isdigit()) # True as only digits are there in numberStr
+print(name.isalpha()) #False as name contains a space. only alphabets have to be there
+print(name.count("i")) #counts number of occurances of i, here it's 2
+print(name.replace("i", "a"))
