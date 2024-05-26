@@ -78,6 +78,18 @@ dict_with_lists = {"numbers": [1, 2, 3], "letters": ['a', 'b', 'c']}
 empty_dict = {}
 print(mixed_keys_dict)
 
+# Multiple Assignments
+name, age, active = "Virat", 35, True
+print(name)
+print(age)
+print(active)
+
+virat = raina = rohit = ashwin = 50
+print(virat)
+print(raina)
+print(rohit)
+print(ashwin)
+
 #Arithmetic operations
 print("Arithmetic operations-----------")
 print("5 + 3 =", 5+3)
