@@ -16,10 +16,10 @@ for multiline comment'''
 greet = "Hi, my name is Mrinmoy"
 print(greet)
 print(5 * "Hi Mrinmoy ")
-var1 = "32"
-var2 = "18"
-print(2 * int(var1), var1)
-print(4 * str(int(var1)+int(var2)))
+num1 = "32"
+num2 = "18"
+print(2 * int(num1), num1)
+print(4 * str(int(num1)+int(num2)))
 #To put a " inside string
 print("double quote\"")
 #multi line string
@@ -86,3 +86,14 @@ print("5 % 3 =", 5%3) #modulo => returns the remainder of division
 print("5 ** 3 =", 5**3) #4 to the power 3 => 4^3
 print("5 // 3 =", 5//3) #floor division => returns the quotient of division, rounded to the nearest integer
 
+# Assignment operators
+a = 30
+print(a)
+a += 3
+print(a)
+a -= 3
+print(a)
+a *= 3
+print(a)
+a /= 3
+print(a)
