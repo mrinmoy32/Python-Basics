@@ -97,3 +97,17 @@ a *= 3
 print(a)
 a /= 3
 print(a)
+
+# Comparision operators
+b = (3 > 32) 
+print (b)
+b = (3 < 32) 
+print (b)
+b = (3 >= 32) 
+print (b)
+b = (3 <= 32) 
+print (b)
+b = (3 == 32) 
+print (b)
+b = (3 != 32) 
+print (b)
