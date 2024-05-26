@@ -15,6 +15,11 @@ for multiline comment'''
 # string
 greet = "Hi, my name is Mrinmoy"
 print(greet)
+print(5 * "Hi Mrinmoy ")
+var1 = "32"
+var2 = "18"
+print(2 * int(var1), var1)
+print(4 * str(int(var1)+int(var2)))
 #To put a " inside string
 print("double quote\"")
 #multi line string
@@ -26,7 +31,10 @@ print(multiLineStr)
 year = 2024
 temperature = 41.7 
 print(temperature, "deg C and", year)
+print(type(year), type(temperature))
 # List
+# A list in Python is an ordered, mutable collection of elements, 
+# allowing for the storage and manipulation of heterogeneous data types.
 ages = [19, 27, 21]
 print(ages)
 colors = ['red', "green", "blue"]
