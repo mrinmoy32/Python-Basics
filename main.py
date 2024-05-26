@@ -123,3 +123,20 @@ b = False
 print(a and b)
 print(a or b)
 print(not b)
+
+# TypeCasting 
+print("TypeCasting-----------")
+a = "3434"
+a = int(a)
+print(a + 5)
+
+height = 170
+print('Height is' , height)
+print('Height is ' + str(height))
+
+human = True
+print("Are you a human: " + str(human))
+
+print(33)
+print(float(33)) #33.0
+print(33/11) #Ans: 3.0   division always returns float
