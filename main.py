@@ -166,3 +166,13 @@ print(numberStr.isdigit()) # True as only digits are there in numberStr
 print(name.isalpha()) #False as name contains a space. only alphabets have to be there
 print(name.count("i")) #counts number of occurances of i, here it's 2
 print(name.replace("i", "a"))
+
+# Accepting user inputs
+name = input("What is your name? : ")
+print("Name entered is: ", name, "\n It is of Data type:", type(name))
+age = input("What is your age? : ")
+print("Age entered is: ", age, "\n It is of Data type:", type(age)) #all user inputs are accepted as string only
+age = int(age) # we can then cast the input to other data types
+print("Now Data type of age is: ", type(age))
+height = float(input("How tall are you? : "))
+print("Height entered is: ", height, "\n It is of Data type:", type(height))
