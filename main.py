@@ -12,6 +12,7 @@ These lines are not executed as code.
 for multiline comment'''
 
 #------------ variables -------------
+print("variables-----------")
 # string
 greet = "Hi, my name is Mrinmoy"
 print(greet)
@@ -78,6 +79,7 @@ empty_dict = {}
 print(mixed_keys_dict)
 
 #Arithmetic operations
+print("Arithmetic operations-----------")
 print("5 + 3 =", 5+3)
 print("5 - 3 =", 5-3)
 print("5 * 3 =", 5*3)
@@ -87,6 +89,7 @@ print("5 ** 3 =", 5**3) #4 to the power 3 => 4^3
 print("5 // 3 =", 5//3) #floor division => returns the quotient of division, rounded to the nearest integer
 
 # Assignment operators
+print("Assignment operators-----------")
 a = 30
 print(a)
 a += 3
@@ -99,6 +102,7 @@ a /= 3
 print(a)
 
 # Comparision operators
+print("Comparision operators-----------")
 b = (3 > 32) 
 print (b)
 b = (3 < 32) 
@@ -111,3 +115,11 @@ b = (3 == 32)
 print (b)
 b = (3 != 32) 
 print (b)
+
+# Logical operators
+print("Logical operators-----------")
+a = True
+b = False
+print(a and b)
+print(a or b)
+print(not b)
