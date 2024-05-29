@@ -33,7 +33,7 @@ slice = slice(8,-4) #creating a slice object by calling the slice function. eg. 
 print(website1[slice])
 print(website2[slice])
 
-#If Statement --------------------
+#if Statement --------------------
 age = int(input("How old are you?: "))
 
 if age == 100:
@@ -57,3 +57,15 @@ while len(name)==0:
 subject = None
 while not subject:
     subject = input("Enter subject: ")
+
+# for loop
+# For loop is a statemnet that will execute it's block of code a limited amount of time
+# while loop can execute unlimited number of times
+# for loop in python executes only a limited number of time
+# in other languages for can execute infinite amount of times. Below is an example in JavaScript
+# for(i=0; i>=0; i++){
+#     console.log("infinite loop")
+# }
+
+for i in range(10):
+    print(i)
