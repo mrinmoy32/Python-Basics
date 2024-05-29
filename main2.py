@@ -44,3 +44,16 @@ elif age < 0:
     print("You haven't been born yet!")
 else:
     print("You are a child!")
+
+# while loop
+# while 1==1:
+#     print("I am stuck in an infinite loop!")
+
+name = ""
+while len(name)==0:
+    name = input("Enter your name: ")
+
+#Another way
+subject = None
+while not subject:
+    subject = input("Enter subject: ")
