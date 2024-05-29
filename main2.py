@@ -1,5 +1,5 @@
 # Continuation from main.py file
-# Math Functions
+# Math Functions -----------------------
 import math #importing the math module
 pi = 3.14
 neg = - 32
@@ -13,7 +13,7 @@ print(math.sqrt(pi))
 print(max(x,y,z))
 print(min(x,y,z))
 
-# String slicing (create substring from a string)
+# String slicing (create substring from a string) ---------------------
 # using indexing[] -> [start:stop:step]
 name = "Virat Kohli"
 first_name = name[0:5] #Also print((name[:5])) would work
@@ -29,6 +29,18 @@ print(reversed_name)
 # using slice()
 website1 = "https://google.com"
 website2 = "https://wikipedia.com"
-slice = slice(8,-4) #creating a slice object by invoking the slice function like slice(start,stop,step)
+slice = slice(8,-4) #creating a slice object by calling the slice function. eg. slice(start,stop,step) step is optional
 print(website1[slice])
 print(website2[slice])
+
+#If Statement --------------------
+age = int(input("How old are you?: "))
+
+if age == 100:
+    print("You are a century old")
+elif age >= 18:
+    print("You are an adult!")
+elif age < 0:
+    print("You haven't been born yet!")
+else:
+    print("You are a child!")
