@@ -27,3 +27,8 @@ reversed_name = name[::-1] # to reverse a string in python
 print(reversed_name)
 
 # using slice()
+website1 = "https://google.com"
+website2 = "https://wikipedia.com"
+slice = slice(8,-4) #creating a slice object by invoking the slice function like slice(start,stop,step)
+print(website1[slice])
+print(website2[slice])
