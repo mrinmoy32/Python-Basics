@@ -69,7 +69,7 @@ while not subject:
 import time
 for i in range(10):
     print(i)
-for i in range(30,50): # 10 is inclusive and and 50 is exclusive. will print 10 - 49
+for i in range(30,50): # 30 is satrting index and it's inclusive and and 50 is exclusive. will print 10 - 49
     print(i)
 # with optional step
 for i in range(5,20,2):
