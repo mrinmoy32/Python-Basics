@@ -5,8 +5,8 @@ rows = int(input("How many rows?: "))
 columns = int(input("How many columns?: "))
 symbol = input("Enter a symbol to use: ")
 
-for i in range(0,rows):
-    for j in range(0,columns):
+for i in range(rows):
+    for j in range(columns):
         print(symbol, end="") #end="" prevnts moving to new line
     print() # print a new line
 
@@ -14,4 +14,17 @@ for i in range(0,rows):
 # change a loop execution from it's normal sequance 
 
 # break = used to terminate a loop entirely
-# continue = skips
+# continue = skips to the next iteration of the loop
+# pass = does nothing, acts as a placeholder
+
+while True:
+    name = input("Enter your name: ")
+    if name != "":
+        break
+
+phone_number = "123-456-7890"
+
+for i in phone_number:
+    if i == "-":
+        continue
+    print(i, end="")
