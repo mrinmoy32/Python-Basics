@@ -9,3 +9,9 @@ for i in range(0,rows):
     for j in range(0,columns):
         print(symbol, end="") #end="" prevnts moving to new line
     print() # print a new line
+
+# Loop control statements
+# change a loop execution from it's normal sequance 
+
+# break = used to terminate a loop entirely
+# continue = skips
