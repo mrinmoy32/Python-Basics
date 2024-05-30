@@ -66,6 +66,17 @@ while not subject:
 # for(i=0; i>=0; i++){
 #     console.log("infinite loop")
 # }
-
+import time
 for i in range(10):
     print(i)
+for i in range(30,50): # 10 is inclusive and and 50 is exclusive. will print 10 - 49
+    print(i)
+# with optional step
+for i in range(5,20,2):
+    print(i)
+for char in "virat kohli":
+    print(char)
+for sec in range(10,0,-1):
+    print(sec)
+    time.sleep(1)
+print("Happy New Year!")
