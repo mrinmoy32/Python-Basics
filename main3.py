@@ -27,11 +27,22 @@ phone_number = "123-456-7890"
 for i in phone_number:
     if i == "-":
         continue
-    print(i, end="")
+    # print(i, end="")
 
 for i in range(20):
     if i+1==13:
         pass # does noting, hence 13 won't be printed
-    else:
-        print(i+1)
+    # else:
+        # print(i+1)
     
+# List methods and 2D list
+foods = ["pizza", "burger", "hotdog", "pasta", "pudding"]
+
+foods[1] = "Biryani"
+foods.append("ice cream")
+foods.remove("hotdog")
+foods.pop() #ice cream is popped
+foods.insert(0,"cake")
+foods.sort()
+for item in foods:
+    print(item)
