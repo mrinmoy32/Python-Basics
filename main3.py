@@ -59,3 +59,14 @@ print(food) # [['coffee', 'soda', 'tea'], ['pizza', 'biryani', 'salad'], ['cake'
 print(food[0]) # ['coffee', 'soda', 'tea']
 print(food[0][0]) # coffee
 print(food[2][2][0]) # pastry
+
+#tuple methods
+
+player = ("Virat", 35, "male")
+print(player.count("Virat"))
+print(player.index("male"))
+
+for item in player:
+    print(item)
+if "Virat" in player:
+    print("Virat is here!")
