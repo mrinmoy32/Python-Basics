@@ -1,14 +1,14 @@
 # nested loops 
 #(the inner loop will finish all of it's iteration before finishing one iteration of the outer loop)
 
-rows = int(input("How many rows?: "))
-columns = int(input("How many columns?: "))
-symbol = input("Enter a symbol to use: ")
+# rows = int(input("How many rows?: "))
+# columns = int(input("How many columns?: "))
+# symbol = input("Enter a symbol to use: ")
 
-for i in range(rows):
-    for j in range(columns):
-        print(symbol, end="") #end="" prevnts moving to new line
-    print() # print a new line
+# for i in range(rows):
+#     for j in range(columns):
+#         print(symbol, end="") #end="" prevnts moving to new line
+#     print() # print a new line
 
 # Loop control statements
 # change a loop execution from it's normal sequance 
@@ -17,10 +17,10 @@ for i in range(rows):
 # continue = skips to the next iteration of the loop
 # pass = does nothing, acts as a placeholder
 
-while True:
-    name = input("Enter your name: ")
-    if name != "":
-        break
+# while True:
+#     # name = input("Enter your name: ")
+#     if name != "":
+#         break
 
 phone_number = "123-456-7890"
 
@@ -31,7 +31,7 @@ for i in phone_number:
 
 for i in range(20):
     if i+1==13:
-        pass
+        pass # does noting, hence 13 won't be printed
     else:
         print(i+1)
     
