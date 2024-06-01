@@ -44,5 +44,18 @@ foods.remove("hotdog")
 foods.pop() #ice cream is popped
 foods.insert(0,"cake")
 foods.sort()
+# foods.clear()
 for item in foods:
     print(item)
+
+#Multidimentional List/ Nested List
+#2D list = List of lists
+drinks = ["coffee", "soda", "tea"]
+dinner = ["pizza", "biryani", "salad"]
+dessert = ["cake", "ice cream", ["pastry", "jalebi"]]
+
+food = [drinks, dinner, dessert]
+print(food) # [['coffee', 'soda', 'tea'], ['pizza', 'biryani', 'salad'], ['cake', 'ice cream']]
+print(food[0]) # ['coffee', 'soda', 'tea']
+print(food[0][0]) # coffee
+print(food[2][2][0]) # pastry
