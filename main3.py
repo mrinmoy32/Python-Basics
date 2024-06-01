@@ -28,3 +28,10 @@ for i in phone_number:
     if i == "-":
         continue
     print(i, end="")
+
+for i in range(20):
+    if i+1==13:
+        pass
+    else:
+        print(i+1)
+    
