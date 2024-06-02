@@ -70,3 +70,21 @@ for item in player:
     print(item)
 if "Virat" in player:
     print("Virat is here!")
+
+# Set methods
+# Set (collection which is unordered, unindexed, mutable. But no duplicate values)
+utensils = {"fork", "spoon", "knife"}
+utensils.add("Tong")
+utensils.remove("spoon")
+# utensils.clear()
+dishes = {"bowl", "plate", "cup", "knife"}
+# utensils.update(dishes) # contents of dishes added in utensils
+# for x in utensils:
+#     print(x)
+dinner_table = utensils.union(dishes)
+# for x in dinner_table:
+#     print(x)
+print(dishes.difference(utensils)) #items dishes has but but utensils doesn't
+print(utensils.difference(dishes)) #items utensils has but but dishes doesn't
+
+print(utensils.intersection(dishes)) #show only common items
