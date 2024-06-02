@@ -5,7 +5,7 @@
 | **Mutable**    | Yes              | No               | Yes              | Yes               |
 | **Ordered**    | Yes              | Yes              | No               | Yes (Python 3.7+) |
 | **Indexed**    | Yes              | Yes              | No               | No                |
-| **Duplicate Values** | Yes        | Yes              | No               | Yes (Values)      |
+| **Duplicate Values** | Yes        | Yes              | No               | Yes (Values) No (Keys)      |
 
 ### Explanation of Properties
 
