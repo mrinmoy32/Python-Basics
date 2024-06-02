@@ -34,7 +34,7 @@ temperature = 41.7
 print(temperature, "deg C and", year)
 print(type(year), type(temperature))
 # List
-# A list in Python is an ordered, mutable collection of elements, 
+# A list in Python is an ordered, indexed, "mutable" collection of elements, can have duplicate elements
 # allowing for the storage and manipulation of heterogeneous data types.
 ages = [19, 27, 21]
 print(ages)
@@ -47,8 +47,9 @@ print(singleElementList)
 emptyList = []
 print(emptyList)
 # Tuple
-# Python tuples are ordered collections of elements, similar to lists, but they are immutable, 
+# Python tuples are ordered, indexed collections of elements, similar to lists, but they are "immutable", 
 # meaning once created, their contents cannot be changed. Tuples are created using parentheses ().
+# Tuples can have duplicate elements 
 randomNumbers = (1,0,4,8,6)
 print(randomNumbers)
 tuple_of_strings = ("apple", "banana", "orange", "grape")
@@ -65,9 +66,17 @@ tuple_of_dicts = ({'name': 'Alice', 'age': 30}, {'name': 'Bob', 'age': 25})
 print(tuple_of_dicts)
 empty_tuple = ()
 print(empty_tuple)
+# Set (collection which is unordered, unindexed, mutable. But no duplicate values)
+utensils = {"fork", "spoon", "knife"}
+for x in utensils:
+    print(x)
+dishes = {"bowl", "plate", "cup"}
+mixed_set = {1, "apple", 3.14, (1, 2)}
+print(mixed_set)  # Output: {1, 'apple', 3.14, (1, 2)}
 # Dictionaries or Maps
 # Python dictionaries, also known as maps or associative arrays in other languages, 
-# are unordered collections of key-value pairs.
+# are unordered collections of key-value pairs. 
+#Mutable, Ordered (maintain the insertion order of key-value pairs), Not Indexed,No Duplicate Keys
 string_to_int_dict = {"one": 1, "two": 2, "three": 3, "four": 4}
 int_to_string_dict = {1: "one", 2: "two", 3: "three", 4: "four"}
 mixed_dict = {"name": "Alice", "age": 30, "is_student": False, "grades": [85, 92, 78]}
