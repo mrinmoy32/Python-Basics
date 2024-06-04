@@ -18,3 +18,7 @@ def greet(first_name, last_name, year):
     print("Hello" + " " + first_name + " " + last_name)
     print("Happy New Year!" + " " + str(year))
 greet(year=2024, last_name="Pal", first_name="Mrinmoy")
+
+# nested function call
+print(round(abs(float(-3.3456))))
+print(round(abs(float(input("Enter a whole positive number: ")))))
