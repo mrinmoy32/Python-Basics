@@ -76,7 +76,8 @@ print(mixed_set)  # Output: {1, 'apple', 3.14, (1, 2)}
 # Dictionaries or Maps
 # Python dictionaries, also known as maps or associative arrays in other languages, 
 # are unordered collections of key-value pairs. 
-#Mutable, Ordered (maintain the insertion order of key-value pairs), Not Indexed,No Duplicate Keys
+# Mutable, Ordered (maintain the insertion order of key-value pairs), Not Indexed, No Duplicate Keys
+# Fast because they use hasing
 string_to_int_dict = {"one": 1, "two": 2, "three": 3, "four": 4}
 int_to_string_dict = {1: "one", 2: "two", 3: "three", 4: "four"}
 mixed_dict = {"name": "Alice", "age": 30, "is_student": False, "grades": [85, 92, 78]}
