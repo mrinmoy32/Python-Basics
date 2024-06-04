@@ -109,3 +109,15 @@ mixed_dict.pop("grades")
 #   print(value) # prints the values
 for key, value in mixed_dict.items():
   print(key, ":", value)
+
+# index operator []
+# gives access to a sequence's element (str, list, tuples)
+name = "sachin Tendulkar"
+
+if(name[0].islower()):
+    name = name.capitalize()
+print(name)
+first_name = name[:6].upper()
+last_name = name[7:].lower()
+print(first_name)
+print(last_name)
