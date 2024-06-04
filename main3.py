@@ -88,3 +88,24 @@ print(dishes.difference(utensils)) #items dishes has but but utensils doesn't
 print(utensils.difference(dishes)) #items utensils has but but dishes doesn't
 
 print(utensils.intersection(dishes)) #show only common items
+
+# Dictionary methods
+mixed_dict = {"name": "Alice", "age": 30, "is_student": False, "grades": [85, 92, 78]}
+print(mixed_dict["name"]) #Alice
+# print(mixed_dict["addrerss"]) #KeyError: 'addrerss' key deosn't exist
+print(mixed_dict.get('addrerss')) #none
+print(mixed_dict.keys())
+print(mixed_dict.values())
+print(mixed_dict.items())
+mixed_dict.update({"yob": 2000})
+mixed_dict.update({"is_student": True})
+mixed_dict.pop("grades")
+
+# for key in mixed_dict:
+#   print(key) # prints the keys
+# for key in mixed_dict:
+#   print(mixed_dict[key]) # prints the values
+# for value in mixed_dict.values(): # loops through the values
+#   print(value) # prints the values
+for key, value in mixed_dict.items():
+  print(key, ":", value)
