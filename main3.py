@@ -117,7 +117,22 @@ name = "sachin Tendulkar"
 if(name[0].islower()):
     name = name.capitalize()
 print(name)
+#Sllicing string
 first_name = name[:6].upper()
 last_name = name[7:].lower()
+last_character = name[-1]
 print(first_name)
 print(last_name)
+print(last_character)
+
+#index operator [] with list and tuple
+numbers = [10, 20, 30, 40, 50, 60]
+print(numbers[0])
+colors = ("red", "green", "blue", "yellow", "orange")
+print(colors[3])
+#Sllicing list
+my_slice = numbers[1:4]
+print(my_slice)  # Output: [20, 30, 40]
+#Sllicing Tuple
+my_tuple_slice = colors[2:]
+print(my_tuple_slice)  # Output: ("blue", "yellow", "orange")
