@@ -38,3 +38,21 @@ display_name() # Sachin
 print(name) # Virat
 
 #Scope chain => LEGB: Local > Enclosing > Global > Built-in 
+
+## *args (parameter that will pack all arguments into a tuple
+# useful when a function needs to accept a varying amount of arguments)
+def add(num1, num2):
+    return num1 + num2
+print(add(2,3))
+
+def sum(*args):
+    sum = 0
+    for i in args:
+        sum += i
+    return sum
+
+print(sum(1,2,3,4))
+
+def dispaly_items(*items):
+    print(items)
+dispaly_items("One", 2, True, None)
