@@ -22,3 +22,19 @@ greet(year=2024, last_name="Pal", first_name="Mrinmoy")
 # nested function call
 print(round(abs(float(-3.3456))))
 print(round(abs(float(input("Enter a whole positive number: ")))))
+
+# Variable Scope
+# scope => The region that a variable is recognised
+# A variable is only available from inside the region it is created
+# A global and locally scoped versions of a varible can be created
+
+name = "Virat"  # globally scoped
+
+def display_name():
+    name = "Sachin" # locally scoped
+    print(name)
+
+display_name() # Sachin
+print(name) # Virat
+
+#Scope chain => LEGB: Local > Enclosing > Global > Built-in 
