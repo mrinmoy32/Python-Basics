@@ -84,3 +84,12 @@ print("The {item} jumped over the {item}".format(animal="cow", item="moon")) #ke
 
 text = "The {} jumped over the {}"
 print(text.format(animal,item))
+#lets add some padding
+name = "Mrinmoy"
+person = "friend"
+print("Hi I'm {1}. Nice to meet you {0}".format(person, name))
+print("Hi I'm {:10}. Nice to meet you {}".format(name, person)) # 10 spaces to the right
+print("Hi I'm {0:>10}. Nice to meet you {1}".format(name, person)) # 
+print("Hi I'm {name:<10}. Nice to meet you {person}".format(name="virat", person="Rohit")) # 
+print("Hi I'm {0:^10}. Nice to meet you {1}".format(name, person)) # 
+
