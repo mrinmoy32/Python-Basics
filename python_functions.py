@@ -21,7 +21,7 @@ greet(year=2024, last_name="Pal", first_name="Mrinmoy")
 
 # nested function call
 print(round(abs(float(-3.3456))))
-print(round(abs(float(input("Enter a whole positive number: ")))))
+# print(round(abs(float(input("Enter a whole positive number: ")))))
 
 # Variable Scope
 # scope => The region that a variable is recognised
@@ -64,5 +64,23 @@ def welcome(**kwargs):
     print('Hello', end=" ")
     for key, value in kwargs.items():
         print(value, end=" ")
+    print()
 
 welcome(title="Mr.", first="Mrinmoy", last="pal")
+
+#format method
+# The str.format() method is an optional method that gives users more control when displaying the output
+
+animal = "cow"
+item = "moon"
+
+print("The " + animal + " jumped over the " + item)
+print("The {} jumped over the {}".format("cow", "moon"))  
+print("The {} jumped over the {}".format(animal, item)) # more elegant way. The {} are known as format field
+# these format fields work as placeholders for values or variable 
+print("The {1} jumped over the {0}".format(animal, item)) #positional argumnets
+print("The {animal} jumped over the {item}".format(animal="cow", item="moon")) #keyword argumnets
+print("The {item} jumped over the {item}".format(animal="cow", item="moon")) #keyword argumnets
+
+text = "The {} jumped over the {}"
+print(text.format(animal,item))
