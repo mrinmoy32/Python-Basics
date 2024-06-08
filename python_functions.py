@@ -56,3 +56,13 @@ print(sum(1,2,3,4))
 def dispaly_items(*items):
     print(items)
 dispaly_items("One", 2, True, None)
+
+## *kwargs (parameter that will pack all arguments into a dictionary
+# useful when a function needs to accept a varying amount of arguments)
+
+def welcome(**kwargs):
+    print('Hello', end=" ")
+    for key, value in kwargs.items():
+        print(value, end=" ")
+
+welcome(title="Mr.", first="Mrinmoy", last="pal")
