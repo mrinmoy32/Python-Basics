@@ -93,3 +93,12 @@ print("Hi I'm {0:>10}. Nice to meet you {1}".format(name, person)) #
 print("Hi I'm {name:<10}. Nice to meet you {person}".format(name="virat", person="Rohit")) # 
 print("Hi I'm {0:^10}. Nice to meet you {1}".format(name, person)) # 
 
+#number format
+num_pi = 3.14159
+print("The number pi is {:.2f}".format(num_pi)) # upto 2 dec place
+amount = 58755754543
+print("The amount is {:,}".format(amount)) #58,755,754,543
+print("The amount is {:b}".format(amount)) #binary representation
+print("The amount is {:o}".format(amount)) #octal representation
+print("The amount is {:x}".format(amount)) #hex representation
+print("The amount is {:e}".format(amount)) #scientific representation
