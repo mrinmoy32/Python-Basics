@@ -115,3 +115,19 @@ print(z)
 cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
 random.shuffle(cards) # shuffles the list
 print(cards)
+
+# exception 
+# events detected during execution that interrupts the flow of a program
+# we can handle exception using try except block
+
+try:
+    numerator = int(input("Enter a number to divide: "))
+    denominator = int(input("Enter a number to divide by: "))
+    result = numerator/denominator
+    print(result)
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+except ValueError:
+    print("Please enter numbers only!")
+except Exception:
+    print("Something went wrong!")
