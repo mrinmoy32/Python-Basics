@@ -120,3 +120,13 @@ except FileNotFoundError:
 except Exception as e:
     print(e)
     print('Error occurred while moving file')
+
+# we can also move folders using shutil.move() and os.replace() or os.rename() methods
+source = 'move_folder'
+destination = 'C:\\Python_BootCamp\\Python-Basics\\files_in_python\\temp_folder\\move_folder'
+shutil.move(source , destination) # src, dest
+
+source = 'move_folder2'
+destination = 'C:\\Python_BootCamp\\Python-Basics\\files_in_python\\temp_folder\\move_folder2'
+os.replace(source, destination) # src, dest
+
