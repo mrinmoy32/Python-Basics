@@ -96,3 +96,11 @@ creation_time_ist = creation_time.astimezone(datetime.timezone(datetime.timedelt
 print(f"Creation Time: {creation_time_ist}")
 print(f"Modification Time: {file_modification_time}")
 ############
+
+# move a file
+try:
+    shutil.move('copy4.txt', 'C:\\Python_BootCamp\\Python-Basics\\files_in_python\\temp_folder\\copy4.txt') # src, dest
+except FileNotFoundError:
+    print('File not found while moving')
+except:
+    print('Error occurred while moving file')
