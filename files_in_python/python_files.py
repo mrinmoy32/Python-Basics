@@ -39,3 +39,13 @@ try:
         print('example.txt', 'File written successfully')
 except:
     print('Error occurred while writing to file')
+
+# read a file
+
+try:
+    with open('example.txt', 'r') as file: # in place of 'example.txt' you can use any file path(C:\\Users\\user\\Desktop\\example.txt)
+        print(file.read())
+        print(file.closed) # check if file is closed
+except FileNotFoundError:
+    print('File not found while reading')
+
