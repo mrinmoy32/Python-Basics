@@ -157,3 +157,7 @@ except FileNotFoundError:
     print('Folder not found while deleting')
 except:
     print('Error occurred while deleting folder')
+
+# Best practice to write relative path in python is same as javascript
+# source_path = './temp_folder/source_image.jpeg'
+# destination_path = './temp_folder/destination_image.jpeg'
