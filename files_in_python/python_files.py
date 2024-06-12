@@ -49,3 +49,14 @@ try:
 except FileNotFoundError:
     print('File not found while reading')
 
+# copy a file
+
+try:
+    with open('text.txt', 'r') as source_file:
+        with open('C:\\Python_BootCamp\\Python-Basics\\files_in_python\\temp_folder\\copy.txt', 'w') as target_file: # in place of 'copy.txt' you can use any file path(C:\\Users\\user\\Desktop\\copy.txt)
+            target_file.write(source_file.read())
+    print('File copied successfully')
+except FileNotFoundError:
+    print('File not found while copying')
+except:
+    print('Error occurred while copying file')
