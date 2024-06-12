@@ -148,7 +148,7 @@ except FileNotFoundError:
 except:
     print('Error occurred while deleting folder')
 
-# Remove the directory and its contents using shutil.rmtree()
+# !WARNING: Remove the directory and its contents using shutil.rmtree()
 directory_path = '.\\temp_folder\\move_folder2'
 try:
     shutil.rmtree(directory_path)
