@@ -1,7 +1,7 @@
 # To copy binary files (like images, videos, etc.), you should open the files in binary mode ('rb' and 'wb').
 
-source_path = './temp_folder/source_image.jpg'
-destination_path = './temp_folder/destination_image.jpg'
+source_path = './temp_folder/source_image.jpeg'
+destination_path = './temp_folder/destination_image.jpeg'
 
 # Open the source file in binary read mode and the destination file in binary write mode
 with open(source_path, 'rb') as source_file:
