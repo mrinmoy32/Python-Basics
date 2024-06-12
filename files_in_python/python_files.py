@@ -60,3 +60,39 @@ except FileNotFoundError:
     print('File not found while copying')
 except:
     print('Error occurred while copying file')
+
+# copy using shutil module
+import shutil
+import datetime
+
+# copyfile: Copies the contents of the source file to the destination file. If the destination file already exists, it will be overwritten.
+shutil.copyfile('text.txt', 'copy2.txt') # src, dest
+
+# copy: Copies the source file to the destination file or directory. If the destination is a directory, the source file will be copied with the same name to the destination directory.
+shutil.copy('text.txt', 'copy3.txt')
+
+# copy2: Copies the source file to the destination file or directory. It preserves more metadata of the source file, such as timestamps and permissions, compared to the copy function.
+shutil.copy2('text.txt', 'copy4.txt')
+
+#### NOT SO IMPORTANT AT THIS MOMENT####
+# Get file metadata
+file_path = 'copy4.txt'  # Replace with the actual file path
+file_stats = os.stat(file_path)
+
+# Access different file metadata
+file_size = file_stats.st_size
+file_creation_time = file_stats.st_ctime
+file_modification_time = file_stats.st_mtime
+
+# Print file metadata
+print(f"File Size: {file_size} bytes")
+# Convert creation time to datetime object
+creation_time = datetime.datetime.fromtimestamp(file_creation_time)
+
+# Convert creation time to IST
+creation_time_ist = creation_time.astimezone(datetime.timezone(datetime.timedelta(hours=5, minutes=30)))
+
+# Print creation time in IST
+print(f"Creation Time: {creation_time_ist}")
+print(f"Modification Time: {file_modification_time}")
+############
