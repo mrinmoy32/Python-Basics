@@ -104,3 +104,19 @@ except FileNotFoundError:
     print('File not found while moving')
 except:
     print('Error occurred while moving file')
+
+# move a file using os
+source = 'copy3.txt'
+destination = 'C:\\Python_BootCamp\\Python-Basics\\files_in_python\\temp_folder\\copy3.txt'
+try:
+    if os.path.exists(destination):
+        print('File already exists')
+    else:
+        os.replace(source, destination) 
+        # os.rename(source, destination) # both replace and rename can be used
+        print(source + ' moved successfully')
+except FileNotFoundError:
+    print('File not found while moving')
+except Exception as e:
+    print(e)
+    print('Error occurred while moving file')
