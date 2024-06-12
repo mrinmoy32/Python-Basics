@@ -130,3 +130,10 @@ source = 'move_folder2'
 destination = 'C:\\Python_BootCamp\\Python-Basics\\files_in_python\\temp_folder\\move_folder2'
 os.replace(source, destination) # src, dest
 
+# delete a file
+file_path = 'temp_folder\\copy3.txt'
+try:
+    os.remove(file_path)
+    print(file_path + ' File deleted successfully')
+except FileNotFoundError:
+    print('File not found while deleting')
