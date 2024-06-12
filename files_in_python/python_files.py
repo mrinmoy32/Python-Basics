@@ -137,3 +137,13 @@ try:
     print(file_path + ' File deleted successfully')
 except FileNotFoundError:
     print('File not found while deleting')
+
+# using os.rmdir() to delete an empty folder
+folder_path = 'temp_folder\\move_folder'
+try:
+    os.rmdir(folder_path)
+    print(folder_path + ' Folder deleted successfully')
+except FileNotFoundError:
+    print('Folder not found while deleting')
+except:
+    print('Error occurred while deleting folder')
