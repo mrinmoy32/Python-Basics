@@ -19,3 +19,23 @@ try:
         print('Empty file','example.txt', 'created successfully. Will write to this file later')
 except:
     print('Error occurred while creating file')
+
+# write to a file
+
+text = "This is a sample text file. Have a nice day!"
+try:
+    with open('text.txt', 'w') as file: # in place of 'text.txt' you can use any file path(C:\\Users\\user\\Desktop\\text.txt)
+        file.write(text)
+        print('text.txt', 'File written successfully')
+except:
+    print('Error occurred while writing to file')
+
+# now write example.txt
+
+text = "This is a example text file. Thanks!"
+try:
+    with open('example.txt', 'w') as file: # in place of 'text.txt' you can use any file path(C:\\Users\\user\\Desktop\\example.txt)
+        file.write(text)
+        print('example.txt', 'File written successfully')
+except:
+    print('Error occurred while writing to file')
