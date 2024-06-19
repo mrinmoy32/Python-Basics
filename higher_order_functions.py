@@ -161,3 +161,34 @@ print(list(sums)) # [5, 7, 9]
 currency_rates = [("USD", 1.0), ("EUR", 0.85), ("GBP", 0.75)]
 converted_rates = map(lambda rate: (rate[0], rate[1] * 100), currency_rates)
 print(list(converted_rates)) # [('USD', 100.0), ('EUR', 85.0), ('GBP', 75.0)]
+
+#-------------------Filter function-------------------
+# The filter() function is used to filter elements from an iterable (such as a list, tuple, or dictionary) based on a condition.
+# The filter() function takes two arguments: a function that returns a boolean value (True or False) and an iterable. It returns an object of the filter class, that can be converted to a list, tuple, or dictionary.
+# The function is applied to each element of the iterable, and only the elements for which the function returns True are included in the result.
+
+# Syntax: filter(function, iterable)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = filter(lambda number: number%2 == 0, numbers)
+print(set(even_numbers)) # {2, 4, 6, 8, 10}
+
+fruits = ("apple", "banana", "cherry", "date")
+def check_long_fruit(fruit):
+    return len(fruit) > 5
+long_fruits = filter(check_long_fruit, fruits) # without lambda function
+print(tuple(long_fruits)) # ('banana', 'cherry')
+
+person = {"name": "Alice", "age": 25, "city": "New York"}
+keys_starting_with_a = filter(lambda key: key.startswith("a"), person.keys())
+print(list(keys_starting_with_a)) # ['age']
+
+# Using filter() with a list of dictionaries
+people = [
+    {"name": "Alice", "age": 25},
+    {"name": "Bob", "age": 17},
+    {"name": "Charlie", "age": 20}
+]
+adults = filter(lambda person: person["age"] >= 18, people)
+for person in adults:
+    print(person["name"], person["age"])
