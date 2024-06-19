@@ -334,3 +334,29 @@ print(pass_scores) # {'Pass', 'Fail'}
 # Create a set of squares of numbers from 1 to 5
 squares_set = {x**2 for x in range(1, 6)}
 print(squares_set)  # Output: {1, 4, 9, 16, 25}
+
+#-------------------Zip function-------------------
+# The zip() function takes two or more iterables as arguments and returns an iterator of tuples where the i-th tuple contains the i-th element from each of the input iterables.
+# The zip() function stops when the shortest input iterable is exhausted.
+
+# Syntax: zip(iterable1, iterable2, ...)
+# The zip() function returns an iterator of tuples.
+
+# Example 1: Using zip() with two lists
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 20]
+name_age = zip(names, ages)
+print(list(name_age)) # [('Alice', 25), ('Bob', 30), ('Charlie', 20)]
+
+# Example 2: Using zip() with a list, a tuple and a set
+numbers = [1, 2, 3]
+fruits = ("apple", "banana", "cherry")
+colors = {"red", "green", "blue"}
+combined = zip(numbers, fruits, colors)
+print(tuple(combined)) # ((1, 'apple', 'green'), (2, 'banana', 'red'), (3, 'cherry', 'blue'))
+
+# Example 3: Using zip() with a dictionary
+keys = ["name", "age", "city"]
+values = ["Alice", 25, "New York"]
+person = dict(zip(keys, values))
+print(person) # {'name': 'Alice', 'age': 25, 'city': 'New York'}
