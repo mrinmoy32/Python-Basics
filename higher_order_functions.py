@@ -319,3 +319,18 @@ def square(x):
 numbers = {1, 2, 3, 4, 5}
 squared_numbers = {number: square(number) for number in numbers}
 print(squared_numbers) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+#-------------------Set Comprehensions-------------------
+# Set comprehensions provide a concise way to create sets in Python.
+# Set comprehensions are a more readable and efficient way to create sets compared to using loops.
+# Set comprehensions consist of curly braces containing elements separated by a comma, followed by a for clause, then zero or more for or if clauses.
+
+# Syntax: {expression for item in iterable if condition}
+
+scores = {80, 90, 70, 85, 65}
+pass_scores = {"Pass" if score >= 80 else "Fail" for score in scores}
+print(pass_scores) # {'Pass', 'Fail'}
+
+# Create a set of squares of numbers from 1 to 5
+squares_set = {x**2 for x in range(1, 6)}
+print(squares_set)  # Output: {1, 4, 9, 16, 25}
