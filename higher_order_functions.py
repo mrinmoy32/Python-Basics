@@ -90,3 +90,17 @@ print(age_check(18))
 numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 numbers.sort() # Sort the numbers in ascending order
 print(numbers) # [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+
+# Sorting in descending order
+sorted_numbers = sorted(numbers, reverse=True) # Sort the numbers in descending order
+print(sorted_numbers) # [9, 6, 5, 5, 5, 4, 3, 3, 2, 1, 1]
+
+# Sorting a tuple
+fruits = ("apple", "banana", "cherry", "date")
+sorted_fruits = sorted(fruits)
+print(sorted_fruits) # ['apple', 'banana', 'cherry', 'date']
+
+# Sorting a tuple with a custom key
+fruits = ("apple", "banana", "cherry", "date")
+sorted_fruits = sorted(fruits, key=lambda fruit: len(fruit))
+print(sorted_fruits) # ['date', 'apple', 'banana', 'cherry']
