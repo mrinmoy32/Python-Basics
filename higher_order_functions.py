@@ -360,3 +360,9 @@ keys = ["name", "age", "city"]
 values = ["Alice", 25, "New York"]
 person = dict(zip(keys, values))
 print(person) # {'name': 'Alice', 'age': 25, 'city': 'New York'}
+
+#-------------------Unzip a list of tuples-------------------
+people = [("Alice", 25), ("Bob", 30), ("Charlie", 20)]
+names, ages = zip(*people)
+print(names) # ('Alice', 'Bob', 'Charlie')
+print(ages) # (25, 30, 20)
