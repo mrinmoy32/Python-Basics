@@ -192,3 +192,32 @@ people = [
 adults = filter(lambda person: person["age"] >= 18, people)
 for person in adults:
     print(person["name"], person["age"])
+
+#-------------------Reduce function-------------------
+# The reduce() function is used to apply a function to the elements of an iterable (such as a list, tuple, or dictionary) cumulatively and returns a single value.
+# The reduce() function is part of the functools module in Python.
+# The reduce() function takes two arguments: a function that takes two arguments and an iterable.
+# The function is applied to the first two elements of the iterable, and then the result is applied to the next element, and so on, until the iterable is exhausted.
+
+# Syntax: reduce(function, iterable)
+
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5]
+sum_of_numbers = reduce(lambda x, y: x + y, numbers)
+print(sum_of_numbers) # 15
+
+birds = ("crow", "sparrow", "eagle", "pigeon")
+concatenated_birds = reduce(lambda x, y: x + " " + y, birds)
+print(concatenated_birds) # crow sparrow eagle pigeon
+
+# Using reduce() with a list of dictionaries
+people = [
+    {"name": "Alice", "age": 25},
+    {"name": "Bob", "age": 30},
+    {"name": "Charlie", "age": 20}
+]
+total_age = reduce(lambda acc, person: acc + person["age"], people, 0)
+# The rduce function takes 3 arguments: the function, the iterable, and the initial value of the accumulator.
+# The 2nd argumnet must be an iterable.
+print(total_age) # 75
