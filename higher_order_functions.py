@@ -52,3 +52,28 @@ print(result) # 8
 
 result = apply_operation(subtract, 5, 3)
 print(result) # 2
+
+#-------------------Lambda Functions-------------------
+# Lambda functions, also known as anonymous functions, are small, inline functions that are defined using the lambda keyword.
+# Lambda functions can take any number of arguments but can only have one expression.
+# Lambda functions are often used as arguments to higher-order functions or in situations where a small function is needed for a short period of time.
+
+# Syntax: lambda arguments: expression
+
+# Example 1: Lambda function with one argument
+square = lambda x: x**2
+print(square(5)) # 25
+
+# Example 2: Lambda function with multiple arguments
+volume = lambda l, w, h: l * w * h
+print(volume(2, 3, 4)) # 24
+
+# Example 3: Using lambda function as an argument to a higher-order function
+def apply_operation(operation, a, b):
+    return operation(a, b)
+
+result = apply_operation(lambda x, y: x + y, 5, 3)
+print(result) # 8
+
+age_check = lambda age: "Adult" if age >= 18 else "Minor"
+print(age_check(18))
