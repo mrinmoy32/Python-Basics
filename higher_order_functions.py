@@ -104,3 +104,25 @@ print(sorted_fruits) # ['apple', 'banana', 'cherry', 'date']
 fruits = ("apple", "banana", "cherry", "date")
 sorted_fruits = sorted(fruits, key=lambda fruit: len(fruit))
 print(sorted_fruits) # ['date', 'apple', 'banana', 'cherry']
+
+# Sorting a dictionary by keys
+person = {"name": "Alice", "age": 25, "city": "New York"}
+sorted_person = sorted(person)
+for key in sorted_person:
+    print(key, person[key])
+
+# Sorting a dictionary by values
+person = {"name": "Alice", "country": "USA", "city": "New York"}
+sorted_person = sorted(person, key=lambda key: person[key])
+for key in sorted_person:
+    print(key, person[key])
+
+# Sorting a tuple of dictionaries by a specific key
+people = (
+    {"name": "Alice", "age": 25},
+    {"name": "Bob", "age": 30},
+    {"name": "Charlie", "age": 20}
+)
+sorted_people = sorted(people, key=lambda person: person["age"])
+for person in sorted_people:
+    print(person["name"], person["age"])
