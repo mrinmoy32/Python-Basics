@@ -249,3 +249,31 @@ scores = [80, 90, 70, 85, 65]
 pass_scores = ["Pass" if score >= 80 else "Fail" for score in scores]
 print(pass_scores) # ['Pass', 'Pass', 'Fail', 'Pass', 'Fail']
 
+# Example 4: Using a list comprehension with nested loops
+colors = ["red", "green", "blue"]
+objects = ["car", "house", "tree"]
+color_objects = [(color, object) for color in colors for object in objects]
+print(color_objects) # [('red', 'car'), ('red', 'house'), ('red', 'tree'), ('green', 'car'), ('green', 'house'), ('green', 'tree'), ('blue', 'car'), ('blue', 'house'), ('blue', 'tree')]
+
+# Example 5: Using a list comprehension with a function
+def square(x):
+    return x**2
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [square(number) for number in numbers]
+print(squared_numbers) # [1, 4, 9, 16, 25]
+
+# Example 6: Using a list comprehension with a dictionary
+person = {"name": "Alice", "age": 25, "city": "New York"}
+person_items = [f"{key}: {value}" for key, value in person.items()]
+print(person_items) # ['name: Alice', 'age: 25', 'city: New York']
+
+# Example 7: Using a list comprehension with a set
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+squares_set = {number**2 for number in numbers}
+print(squares_set) # {64, 1, 4, 36, 100, 9, 16, 49, 81, 25}
+
+# Example 8: Using a list comprehension with a nested list
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flattened_matrix = [number for row in matrix for number in row]
+print(flattened_matrix) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
