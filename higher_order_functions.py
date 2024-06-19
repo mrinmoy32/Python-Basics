@@ -33,3 +33,22 @@ print(greeting("Alice")) # Hello, Alice
 #Another example
 out = print # Assign the print function to the variable out
 out("Hello, World!") # Hello, World!
+
+#-------------------Higer Order Functions-------------------
+# A higher-order function is a function that takes one or more functions as arguments or returns a function as its result.
+# Higher-order functions are used to abstract and encapsulate common patterns in code.
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def apply_operation(operation, a, b):
+    return operation(a, b)
+
+result = apply_operation(add, 5, 3)
+print(result) # 8
+
+result = apply_operation(subtract, 5, 3)
+print(result) # 2
