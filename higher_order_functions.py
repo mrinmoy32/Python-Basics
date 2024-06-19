@@ -221,3 +221,31 @@ total_age = reduce(lambda acc, person: acc + person["age"], people, 0)
 # The rduce function takes 3 arguments: the function, the iterable, and the initial value of the accumulator.
 # The 2nd argumnet must be an iterable.
 print(total_age) # 75
+
+#-------------------List Comprehensions-------------------
+# List comprehensions provide a concise way to create lists in Python.
+# List comprehensions are a more readable and efficient way to create lists compared to using loops.
+# List comprehensions consist of square brackets containing an expression followed by a for clause, then zero or more for or if clauses.
+
+# Syntax: [expression for item in iterable if condition]
+
+# List comprehensions can be used to create lists, sets, dictionaries, and even nested lists.
+
+# Example 0: Using a list comprehension to create a list of numbers multiplied by 2
+multiplied_by_2 = [x*2 for x in range(1, 6)]
+print(multiplied_by_2) # [2, 4, 6, 8, 10]
+
+# Example 1: Using a list comprehension to create a list of squares
+numbers = (1, 2, 3, 4, 5)    # we can use list, tuple, set, dictionary here as iterable
+squared_numbers = [numbers**2 for numbers in numbers]
+print(squared_numbers) # [1, 4, 9, 16, 25]
+
+# Example 2: Using a list comprehension with a condition
+even_numbers = [number for number in numbers if number%2 == 0]
+print(even_numbers) # [2, 4]
+
+# Example 3: Using a list comprehension with multiple conditions
+scores = [80, 90, 70, 85, 65]
+pass_scores = ["Pass" if score >= 80 else "Fail" for score in scores]
+print(pass_scores) # ['Pass', 'Pass', 'Fail', 'Pass', 'Fail']
+
