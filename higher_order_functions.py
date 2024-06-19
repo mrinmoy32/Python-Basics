@@ -77,3 +77,16 @@ print(result) # 8
 
 age_check = lambda age: "Adult" if age >= 18 else "Minor"
 print(age_check(18))
+
+#-------------------Sorting iterables-------------------
+# Using sort() method for lists. Syntax list.sort(key=None, reverse=False)
+# and sorted() function for all iterables. Syntax sorted(iterable, key=None, reverse=False)
+
+# The sort() method is used to sort lists in-place.
+# The sort() method modifies the original list and does not return a new list.
+
+# Syntax: list.sort(key=None, reverse=False)
+
+numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+numbers.sort() # Sort the numbers in ascending order
+print(numbers) # [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
