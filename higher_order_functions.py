@@ -290,3 +290,32 @@ print(even_numbers) # (2, 4)
 # Create a tuple of squares of numbers from 1 to 5
 squares_tuple = tuple(x**2 for x in range(1, 6))
 print(squares_tuple)  # Output: (1, 4, 9, 16, 25)
+
+#-------------------Dictionary Comprehensions-------------------
+# Dictionary comprehensions provide a concise way to create dictionaries in Python.
+# Dictionary comprehensions are a more readable and efficient way to create dictionaries compared to using loops.
+# Dictionary comprehensions consist of curly braces containing key-value pairs separated by a colon, followed by a for clause, then zero or more for or if clauses.
+
+# Syntax: {key: value for item in iterable if condition}
+
+# Example 1: Using a dictionary comprehension to create a dictionary of squares
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = {number: number**2 for number in numbers}
+print(squared_numbers) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+# Example 2: Using a dictionary comprehension with multiple conditions
+scores = {"Alice": 80, "Bob": 90, "Charlie": 70, "David": 85, "Eve": 65}
+pass_scores = {name: "Pass" if score >= 80 else "Fail" for name, score in scores.items()}
+print(pass_scores) # {'Alice': 'Pass', 'Bob': 'Pass', 'Charlie': 'Fail', 'David': 'Pass', 'Eve': 'Fail'}
+
+# Example 3: Using a dictionary comprehension with nested loops
+nested_dict = {(i, j): i * j for i in range(1, 4) for j in range(1, 3)}
+print(nested_dict) # {(1, 1): 1, (1, 2): 2, (2, 1): 2, (2, 2): 4, (3, 1): 3, (3, 2): 6}
+
+# Example 4: Using a dictionary comprehension with a function
+def square(x):
+    return x**2
+
+numbers = {1, 2, 3, 4, 5}
+squared_numbers = {number: square(number) for number in numbers}
+print(squared_numbers) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
