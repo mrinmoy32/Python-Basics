@@ -126,3 +126,38 @@ people = (
 sorted_people = sorted(people, key=lambda person: person["age"])
 for person in sorted_people:
     print(person["name"], person["age"])
+
+#-------------------Map function-------------------
+# The map() function is used to apply a function to each element of an iterable (such as a list, tuple, or dictionary) and returns an object of the map class, that can be converted to a list, tuple, or dictionary.
+# The map() function takes two arguments: a function and an iterable.
+# The function is applied to each element of the iterable, and the results are returned as a new iterable.
+
+# Syntax: map(function, iterable)
+
+# Example 1: Using map() with a list
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = map(lambda x: x**2, numbers)
+print((squared_numbers)) # <map object at 0x7f8b1c7b5d30>
+print(list(squared_numbers)) # [1, 4, 9, 16, 25]
+
+# Example 2: Using map() with a tuple
+fruits = ("apple", "banana", "cherry", "date")
+uppercase_fruits = map(lambda fruit: fruit.upper(), fruits)
+print(list(uppercase_fruits)) # ['APPLE', 'BANANA', 'CHERRY', 'DATE']
+print(tuple(uppercase_fruits)) # ('APPLE', 'BANANA', 'CHERRY', 'DATE')
+
+# Example 3: Using map() with a dictionary
+person = {"name": "Alice", "age": 25, "city": "New York"}
+keys = map(lambda key: key.upper(), person.keys())
+print(list(keys)) # ['NAME', 'AGE', 'CITY']
+
+# Example 4: Using map() with multiple iterables
+numbers1 = [1, 2, 3]
+numbers2 = [4, 5, 6]
+sums = map(lambda x, y: x + y, numbers1, numbers2)
+print(list(sums)) # [5, 7, 9]
+
+# Example 5: Using map() with a list of tuples
+currency_rates = [("USD", 1.0), ("EUR", 0.85), ("GBP", 0.75)]
+converted_rates = map(lambda rate: (rate[0], rate[1] * 100), currency_rates)
+print(list(converted_rates)) # [('USD', 100.0), ('EUR', 85.0), ('GBP', 75.0)]
