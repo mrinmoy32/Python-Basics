@@ -277,3 +277,16 @@ print(squares_set) # {64, 1, 4, 36, 100, 9, 16, 49, 81, 25}
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_matrix = [number for row in matrix for number in row]
 print(flattened_matrix) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#-------------------Tuple Comprehensions-------------------
+# Tuple comprehensions are not directly supported in Python.
+# However, you can use a generator expression with the tuple() function to create a tuple from the generator.
+
+# Example: Using a generator expression with the tuple() function
+numbers = [1, 2, 3, 4, 5]
+even_numbers = tuple(number for number in numbers if number%2 == 0)
+print(even_numbers) # (2, 4)
+
+# Create a tuple of squares of numbers from 1 to 5
+squares_tuple = tuple(x**2 for x in range(1, 6))
+print(squares_tuple)  # Output: (1, 4, 9, 16, 25)
