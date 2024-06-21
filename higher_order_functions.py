@@ -366,3 +366,27 @@ people = [("Alice", 25), ("Bob", 30), ("Charlie", 20)]
 names, ages = zip(*people)
 print(names) # ('Alice', 'Bob', 'Charlie')
 print(ages) # (25, 30, 20)
+
+#-------------------if __name__ == "__main__":-------------------
+
+# The if __name__ == "__main__": statement is used to check whether a Python script is being run as the main program or being imported as a module.
+# When a Python script is run, the __name__ variable is set to "__main__". If the script is imported as a module, the __name__ variable is set to the name of the module.
+# The if __name__ == "__main__": statement is used to prevent the code inside the block from running when the script is imported as a module.
+
+# Example: Using if __name__ == "__main__": to run code only when the script is run
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+if __name__ == "__main__":
+    print(add(5, 3)) # 8
+    print(subtract(5, 3)) # 2
+
+import random_module
+if random_module.__name__ == "__main__":
+    print(random_module.add(5, 3)) # 8
+else:
+    print("Imported as a module")
+    print("random_module.__name__:", random_module.__name__)
