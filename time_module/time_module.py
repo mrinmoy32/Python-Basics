@@ -16,3 +16,13 @@ print(f"Month: {time_object.tm_mon}") # 6
 print(f"Day: {time_object.tm_mday}") # 20
 print(f"Hour: {time_object.tm_hour}") # 12
 print(f"Second: {time_object.tm_sec}") # 9
+
+# use strftime() to format the time
+# syantx: time.strftime(format, time)
+formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", time_object)
+print(f"Formatted time: {formatted_time}") # 2024-06-20 12:54:09
+
+# sleep for 2 seconds
+print("Sleeping for 2 seconds...")
+time.sleep(2)
+print("Done sleeping!")
