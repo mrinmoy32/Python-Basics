@@ -16,6 +16,8 @@ def download_url(url):
     try:
         response = requests.get(url)
         print(f"Downloaded {len(response.content)} bytes from {url}")
+        print(f"response: {response.content}") # html response
+        print("=======================================================")
     except Exception as e:
         print(f"Failed to download {url}: {e}")
 
