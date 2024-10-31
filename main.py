@@ -21,7 +21,7 @@ num1 = "32"
 num2 = "18"
 print(2 * int(num1), num1)
 print(4 * str(int(num1)+int(num2)))
-#To put a " inside string
+#To put a " inside string use \"
 print("double quote\"")
 #multi line string
 multiLineStr = '''This is a multiine
