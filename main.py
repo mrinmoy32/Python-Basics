@@ -37,11 +37,13 @@ print(type(year), type(temperature))
 # A list in Python is an ordered, indexed, "mutable" collection of elements, can have duplicate elements
 # allowing for the storage and manipulation of heterogeneous data types.
 ages = [19, 27, 21]
-print(ages)
+print(ages) # [19, 27, 21]
+print(ages[1]) # 27
 colors = ['red', "green", "blue"]
 print(colors)
 mixedList = [0, "black", 1.5, "white", ["nested array", -3], True]
 print(mixedList)
+print(mixedList[3])
 singleElementList = [31]
 print(singleElementList)
 emptyList = []
@@ -51,7 +53,8 @@ print(emptyList)
 # meaning once created, their contents cannot be changed. Tuples are created using parentheses ().
 # Tuples can have duplicate elements 
 randomNumbers = (1,0,4,8,6)
-print(randomNumbers)
+print(randomNumbers) # (1, 0, 4, 8, 6)
+print(randomNumbers[3]) # 8
 tuple_of_strings = ("apple", "banana", "orange", "grape")
 print(tuple_of_strings)
 mixed_tuple = (1, "apple", True, 3.14)
@@ -86,7 +89,11 @@ nested_dict = {"person1": {"name": "Alice", "age": 30}, "person2": {"name": "Bob
 mixed_keys_dict = {1: "one", "two": 2, (3, 4): "three-four"}
 dict_with_lists = {"numbers": [1, 2, 3], "letters": ['a', 'b', 'c']}
 empty_dict = {}
-print(mixed_keys_dict)
+print(mixed_keys_dict) # {1: 'one', 'two': 2, (3, 4): 'three-four'}
+print(mixed_keys_dict[1]) # one
+print(mixed_keys_dict['two']) # 2
+print(mixed_keys_dict[(3,4)]) # three-four
+
 
 # Multiple Assignments
 name, age, active = "Virat", 35, True
