@@ -175,7 +175,7 @@ name = "virat kohli"
 word = "ABcDefG"
 numberStr = "1234"
 print(len(name)) # length of the sting
-print(name.find("h")) # index of h 
+print(name.find("h")) # index of h i.e. 8
 print(name.capitalize()) # makes the 1st letter capital
 print(name.upper())
 print(word.lower())
