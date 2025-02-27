@@ -61,7 +61,7 @@ mixed_tuple = (1, "apple", True, 3.14)
 print(mixed_tuple)
 nested_tuple = (("a", "b"), (1, 2, 3), ("x", "y", "z"))
 print(nested_tuple)
-single_element_tuple = (42,) #need to add a comman to make it work as sigle element tuple
+single_element_tuple = (42,) #need to add a comma to make it work as sigle element tuple
 print(single_element_tuple)
 tuple_of_lists = ([1, 2, 3], ['a', 'b', 'c'], [True, False])
 print(tuple_of_lists)
@@ -75,7 +75,7 @@ for x in utensils:
     print(x)
 dishes = {"bowl", "plate", "cup"}
 mixed_set = {1, "apple", 3.14, (1, 2)}
-print(mixed_set)  # Output: {1, 'apple', 3.14, (1, 2)}
+print(mixed_set)  # Output: {3.14, 1, (1, 2), 'apple'}
 # Dictionaries or Maps
 # Python dictionaries, also known as maps or associative arrays in other languages, 
 # are unordered collections of key-value pairs. 
